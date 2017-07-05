@@ -7,5 +7,4 @@ print ("So, you're %r old, %r tall and %r heavy." % (
 
 cd Documents/Coding/LearningPythonTheHardWay
 
-https://learnpythonthehardway.org/book/
 https://learnpythonthehardway.org/book/ex13.html
