@@ -1,12 +1,18 @@
-age = input("How old are you? ")
-height = input("How tall are you? ")
-weight = input("How much do you weigh? ")
+from sys import argv
 
-print ("So, you're %r old, %r tall and %r heavy." % (
-    age, height, weight))
+script, filename = argv
 
-cd Documents/Coding/LearningPythonTheHardWay
+txt = open(filename)
 
-https://learnpythonthehardway.org/book/ex13.html
+print "Here's your file %r:" % filename
+print txt.read()
+txt.close()
 
-# Testing PR
+print "Type the filename again:"
+file_again = raw_input("> ")
+
+txt_again = open(file_again)
+
+print txt_again.read()
+
+txt_again.close()
